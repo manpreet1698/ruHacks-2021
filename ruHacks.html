@@ -112,8 +112,8 @@
         <div class="card-body">
           <p>Did you eat when you tested your sugar level?</p>
           <form action="" method="post">
-            <input type="radio" name="joke" value="Yes" /> Yes
-            <input type="radio" name="joke" value="No" /> No
+            <input type="radio" name="joke" value="Yes" id="yes" /> Yes
+            <input type="radio" name="joke" value="No" id="no"/> No
           </form>
           <br>
           <p>If yes please indicate what you ate:</p>
@@ -129,14 +129,14 @@
 
           <br><br>
           <p>If No please indicate the time when you last ate:</p>
-          <input style="text-align: center;" type="datetime-local" id="date" min="2021-01"></input><br>
+          <input style="text-align: center;" type="datetime-local" min="2021-01" id="foodTime"></input><br>
 
         </div>
       </div>
     </div>
     <br><br>
     <div class="submitForm">
-      <b><input style="width:1000px; margin-left:5rem;" class="btn-hover color-1" type="submit" id="submitCheckList" style="visibility: visible;"></input></b>
+      <b><input style="width:1000px; margin-left:5rem;" class="btn-hover color-1" type="submit" id="submit" style="visibility: visible;"></input></b>
     </div>
 
 
