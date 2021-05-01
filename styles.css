@@ -1,0 +1,83 @@
+footer {
+  background-color: #e2c2b3;
+}
+
+h3 {
+  text-align: center;
+}
+
+.section-heading {
+  padding-left: 1rem;
+}
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.btn {
+  margin-left: 1rem;
+}
+
+.food-boxes {
+  margin-right: 1rem;
+}
+
+.date-item {
+  text-align: center;
+}
+
+.hero-image {
+  background-image: url(https://images.unsplash.com/photo-1593491034932-844ab981ed7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1951&q=80%22);
+  height: 50%;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: right;
+}
+
+.hero-text h1 {
+  text-align: right;
+  padding-top: 8rem;
+  margin-right: 8rem;
+  color: white;
+}
+
+.hero-text p {
+  text-align: right;
+  padding-top: 5rem;
+  margin-right: 8rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.hero-text button {
+  margin-right: 8rem;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 6rem;
+  margin-bottom: 14rem;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.hero-text button:hover {
+  background-color: #e2c2b3;
+  color: #fff;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Diabities Tracker</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </style>
+</head>
+<body>
+
+  <!-- NAV BAR  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ruHacksGraph.html">Graph</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact</a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+<!-- HOME PAGE BACKGROUND + INTRO -->
+<!-- <img class=src="https://images.unsplash.com/photo-1593491034932-844ab981ed7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1951&q=80" alt="background-image"> -->
+<div class="hero hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Diabetes Personal Tracker</h1>
+    <p>Welcome to the easy way to keep your health in check</p>
+    <button>Log!</button>
+  </div>
+</div>
+
+
+<!-- USER INPUT -->
+<section class="white-section" id="pricing">
+
+  <h2 class="section-heading">Fill Out A New Record:</h2>
+
+
+  <div class="row">
+
+    <div class="pricing-column col-lg-4 col-md-6 date-item">
+      <div class="card">
+        <div class="card-header">
+          <h3>Level</h3>
+        </div>
+        <div class="card-body">
+          <input type="text" placeholder="Enter Sugar level "id="sugar level"></input>
+          <input class="btn" type="submit" id="submit"></input><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6 date-item">
+      <div class="card">
+        <div class="card-header">
+          <h3>Date</h3>
+        </div>
+        <div class="card-body">
+          <input  type="date" id="date" min="2021-01"></input><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 date-item">
+      <div class="card">
+        <div class="card-header">
+          <h3>Food</h3>
+        </div>
+        <div class="card-body">
+          <!-- checklist stuff -->
+          <input type="checkbox" id="carb" style="visibility: visible;"></input>
+          <label class="food-boxes" for="carb" style="visibility: visible;" id="carbLabel">Carbs</label>
+
+          <input type="checkbox" id="protein" style="visibility: visible;"></input>
+          <label class="food-boxes" for="protein" style="visibility: visible;" id="proteinLabel">Protein</label>
+
+          <input type="checkbox" id="fat" style="visibility: visible;"></input>
+          <label class="food-boxes" for="fat" style="visibility: visible;" id="fatLabel">Fats</label>
+
+          <input class="btn" type="submit" id="submitCheckList" style="visibility: visible;"></input>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</section>
+
+  <script src="ruHacks.js"></script>
+</body>
+<!-- Container (Contact Section) -->
+<footer>
+
+  <div class="container">
+    <h3 class="text-center">Contact</h3>
+    <p class="text-center"><em>For any support or questions, please do not hesistate to contact us!</em></p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <p><em><strong>Note: </strong></em> This website is NOT a substitute for medical care.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span>Guelph, ON</p>
+        <p><span class="glyphicon glyphicon-phone"></span>Phone: +1 905-888-2232</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>Email: diabitiesmedicaltracker@support.com</p>
+      </div>
+      <div class="col-md-8">
+
+      <form name="contact-form"
+  action="https://formspree.io/f/xleagndk"
+  method="POST"
+>
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="message" placeholder="Comment" rows="5"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit" onclick="submitForm()">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
