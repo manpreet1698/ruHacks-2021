@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+  </style>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&display=swap');
+  </style>
+
   <title>Diabities Tracker</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,17 +62,19 @@
 <!-- <img class=src="https://images.unsplash.com/photo-1593491034932-844ab981ed7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1951&q=80" alt="background-image"> -->
 <div class="hero hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">Diabetes Personal Tracker</h1>
-    <p>Welcome to the easy way to keep your health in check</p>
-    <button>Log!</button>
+    <br><br><br><br>
+    <h1 style="font-size:50px; color: #FF6200;">Diabetes Personal Tracker</h1>
+    <i><p style="color: #1b5e20;">Welcome to the easy way to keep your health in check</p></i>
+    <button><b>Log!</b></button>
   </div>
 </div>
 
 
 <!-- USER INPUT -->
-<section class="white-section" id="pricing">
+<section  class="white-section" id="pricing">
 
-  <h2 class="section-heading">Fill Out A New Record:</h2>
+  <h2  style="font-family: 'Dela Gothic One', cursive; text-align: center; font-size: 50px;" class="section-heading" style="text-align: center;">Fill Out A New Record:</h2>
+  <br><br>
 
 
   <div class="row">
@@ -71,11 +82,12 @@
     <div class="pricing-column col-lg-4 col-md-6 date-item">
       <div class="card">
         <div class="card-header">
-          <h3>Level</h3>
+          <h3><b>LEVEL</b></h3>
         </div>
         <div class="card-body">
-          <input type="text" placeholder="Enter Sugar level "id="sugar level"></input>
-          <input class="btn" type="submit" id="submit"></input><br>
+          <p>Please indicate the result of your sugar level (mg/dL):</p>
+
+          <input style="text-align: center;" type="text" placeholder="Enter Sugar level "id="sugar level"></input>
         </div>
       </div>
     </div>
@@ -83,10 +95,11 @@
     <div class="pricing-column col-lg-4 col-md-6 date-item">
       <div class="card">
         <div class="card-header">
-          <h3>Date</h3>
+          <h3><b>DATE</b></h3>
         </div>
         <div class="card-body">
-          <input  type="date" id="date" min="2021-01"></input><br>
+          <p>Please indicate the time and the date of the result for the current sugar level you entered:</p>
+          <input style="text-align: center;" type="datetime-local" id="date" min="2021-01"></input><br>
         </div>
       </div>
     </div>
@@ -94,9 +107,16 @@
     <div class="pricing-column col-lg-4 date-item">
       <div class="card">
         <div class="card-header">
-          <h3>Food</h3>
+          <h3><b>FOOD</b></h3>
         </div>
         <div class="card-body">
+          <p>Did you eat when you tested your sugar level?</p>
+          <form action="" method="post">
+            <input type="radio" name="joke" value="Yes" /> Yes
+            <input type="radio" name="joke" value="No" /> No
+          </form>
+          <br>
+          <p>If yes please indicate what you ate:</p>
           <!-- checklist stuff -->
           <input type="checkbox" id="carb" style="visibility: visible;"></input>
           <label class="food-boxes" for="carb" style="visibility: visible;" id="carbLabel">Carbs</label>
@@ -107,11 +127,18 @@
           <input type="checkbox" id="fat" style="visibility: visible;"></input>
           <label class="food-boxes" for="fat" style="visibility: visible;" id="fatLabel">Fats</label>
 
-          <input class="btn" type="submit" id="submitCheckList" style="visibility: visible;"></input>
+          <br><br>
+          <p>If No please indicate the time when you last ate:</p>
+          <input style="text-align: center;" type="datetime-local" id="date" min="2021-01"></input><br>
 
         </div>
       </div>
     </div>
+    <br><br>
+    <div class="submitForm">
+      <b><input style="width:1000px; margin-left:5rem;" class="btn-hover color-1" type="submit" id="submitCheckList" style="visibility: visible;"></input></b>
+    </div>
+
 
 
 
@@ -124,16 +151,18 @@
 <!-- Container (Contact Section) -->
 <footer>
 
-  <div class="container">
-    <h3 class="text-center">Contact</h3>
+  <div style="color: white;"class="container">
+    <br>
+    <h3 style="font-family: 'Dela Gothic One', cursive;"class="text-center">CONTACT</h3>
     <p class="text-center"><em>For any support or questions, please do not hesistate to contact us!</em></p>
-
+    <br>
     <div class="row">
       <div class="col-md-4">
-        <p><em><strong>Note: </strong></em> This website is NOT a substitute for medical care.</p>
-          <p><span class="glyphicon glyphicon-map-marker"></span>Guelph, ON</p>
-        <p><span class="glyphicon glyphicon-phone"></span>Phone: +1 905-888-2232</p>
-        <p><span class="glyphicon glyphicon-envelope"></span>Email: diabitiesmedicaltracker@support.com</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span><b>Guelph, ON</b></p>
+        <p><span class="glyphicon glyphicon-phone"></span><b>Phone:</b> +1 905-888-2232</p>
+        <p><span class="glyphicon glyphicon-envelope"></span><b>Email:</b> diabitiesmedicaltracker@support.com</p>
+        <p><em><strong>Note: </strong> This website is NOT a substitute for medical care.</p></em>
+
       </div>
       <div class="col-md-8">
 
